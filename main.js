@@ -21,5 +21,7 @@ const people = [
 const filterResult = people.filter(element => {
   if (element.id != 2) {
     console.log(element.name);
+  } else {
+    console.log(" ");
   }
 });
