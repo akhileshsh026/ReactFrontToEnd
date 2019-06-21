@@ -22,6 +22,12 @@ const filterResult = people.filter(element => {
   if (element.id != 2) {
     console.log(element.name);
   } else {
-    console.log(" ");
+    console.log("");
   }
 });
+
+//Spread Operator
+
+let arr1 = [1, 2, 3];
+let arr2 = [arr1, 4];
+console.log(arr2);
