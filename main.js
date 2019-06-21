@@ -43,3 +43,19 @@ let person2 = {
 };
 
 console.log(person2);
+
+//Destructuring
+
+let profile = {
+  name: "Akhilesh Kumar",
+  address: {
+    street: "New Market",
+    pin_code: 481661
+  },
+  hobbies: ["Movies,cricket"]
+};
+
+const { name } = profile;
+const { street } = profile.address;
+
+console.log(name, street);
