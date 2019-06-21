@@ -31,3 +31,15 @@ const filterResult = people.filter(element => {
 let arr1 = [1, 2, 3];
 let arr2 = [...arr1, 4];
 console.log(arr2);
+
+let person1 = {
+  name: "Akhilesh",
+  age: 27
+};
+
+let person2 = {
+  ...person1,
+  email: "Akhileshsh026@hotmail.com"
+};
+
+console.log(person2);
