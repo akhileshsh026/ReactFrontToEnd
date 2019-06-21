@@ -12,4 +12,18 @@ class Person {
 }
 
 const person1 = new Person("Akhilesh", 26);
-console.log(person1.greet());
+
+// subclasses
+class Customer extends Person {
+  constructor(name, age, balance) {
+    super(name, age);
+    this.balance = balance;
+  }
+  info() {
+    return `${this.name} owns the balance of ${this.balance}`;
+  }
+}
+
+let customer1 = new Customer("Akhilesh", 23, 23456567);
+
+console.log(customer1);
