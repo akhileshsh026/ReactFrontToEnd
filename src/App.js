@@ -11,6 +11,16 @@ function App() {
         email="akhileshsh026@hotmail.com"
         phone="+917869643113"
       />
+      <Contact
+        name="Saurabh Kumar"
+        email="akhileshsh026@hotmail.com"
+        phone="+917869643113"
+      />
+      <Contact
+        name=" Allwin Charles"
+        email="akhileshsh026@hotmail.com"
+        phone="+917869643113"
+      />
     </div>
   );
 }
