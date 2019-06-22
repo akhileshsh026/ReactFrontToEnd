@@ -5,7 +5,7 @@ import Header from "./components/Header";
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Header branding="Contact Managers" />
       <Contact
         name="Akhilesh Kumar"
         email="akhileshsh026@hotmail.com"
