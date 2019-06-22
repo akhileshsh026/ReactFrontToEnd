@@ -1,16 +1,15 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import "./styling/contactStyle.css";
 
 class Contact extends Component {
   render() {
     const { name, email, phone } = this.props;
     return (
-      <div>
+      <div className="card card-body mb-3">
         <h4 style={headingStyle}>{name}</h4>
-        <ul>
-          <li style={contentStyle}>Email : {email}</li>
-          <li style={contentStyle}>Phone : {phone}</li>
+        <ul className="list-group">
+          <li className="list-group-item">Email : {email}</li>
+          <li className="list-group-item">Phone : {phone}</li>
         </ul>
       </div>
     );
