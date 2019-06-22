@@ -6,7 +6,11 @@ function App() {
   return (
     <div className="App">
       <Header branding="Contact Mangers" />
-      <Contact />
+      <Contact
+        name="Akhilesh Kumar"
+        email="akhileshsh026@hotmail.com"
+        phone="+917869643113"
+      />
     </div>
   );
 }
