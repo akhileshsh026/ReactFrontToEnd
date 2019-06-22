@@ -9,4 +9,8 @@ function Header(props) {
   );
 }
 
+Header.defaultProps = {
+  branding: "My app"
+};
+
 export default Header;
