@@ -1,17 +1,7 @@
 import React from "react";
-
+import Contact from "./components/Contact";
 function App() {
-  return React.createElement(
-    "div",
-    { className: "App" },
-    React.createElement("h1", null, "This is from the JSX Syntax.")
-  );
-
-  // return (
-  //   <div className="App">
-  //     <h1> This is All cleaned Project </h1>
-  //   </div>
-  // );
+  return <Contact />;
 }
 
 export default App;
