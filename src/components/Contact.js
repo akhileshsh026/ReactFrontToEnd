@@ -1,14 +1,19 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import MaterialIcon, { colorPalette } from "material-icons-react";
+import MaterialIcon from "material-icons-react";
 
 class Contact extends Component {
+  OnShowClick = e => {
+    console.log(e.target);
+  };
+
   render() {
     const { name, email, phone } = this.props.contact;
     return (
       <div className="card card-body mb-3">
         <h4>
-          {name} <MaterialIcon icon="arrow_drop_down" />
+          {name}{" "}
+          <MaterialIcon onClick={this.OnShowClick} icon="arrow_drop_down" />
         </h4>
         <ul className="list-group">
           <li className="list-group-item">Email : {email}</li>
@@ -18,16 +23,6 @@ class Contact extends Component {
     );
   }
 }
-
-const contentStyle = {
-  color: "black",
-  fontSize: "20px"
-};
-
-const headingStyle = {
-  color: "gray",
-  fontSize: "40px"
-};
 
 Contact.propTypes = {
   contact: PropTypes.object.isRequired
