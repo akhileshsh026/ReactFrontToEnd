@@ -1,12 +1,15 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import MaterialIcon, { colorPalette } from "material-icons-react";
 
 class Contact extends Component {
   render() {
     const { name, email, phone } = this.props.contact;
     return (
       <div className="card card-body mb-3">
-        <h4 style={headingStyle}>{name}</h4>
+        <h4>
+          {name} <MaterialIcon icon="arrow_drop_down" />
+        </h4>
         <ul className="list-group">
           <li className="list-group-item">Email : {email}</li>
           <li className="list-group-item">Phone : {phone}</li>
