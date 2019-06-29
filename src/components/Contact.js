@@ -12,7 +12,7 @@ class Contact extends Component {
     return (
       <div className="card card-body mb-3">
         <h4>
-          {name}{" "}
+          {name}
           <MaterialIcon
             onClick={this.OnShowClick.bind(this, name)}
             icon="arrow_drop_down"
