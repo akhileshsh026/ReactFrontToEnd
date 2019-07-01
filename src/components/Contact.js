@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 import MaterialIcon from "material-icons-react";
 
 class Contact extends Component {
-  OnShowClick = (name, e) => {
-    console.log(name, e.target);
+  OnShowClick = e => {
+    console.log(e.target);
   };
 
   render() {
@@ -13,10 +13,7 @@ class Contact extends Component {
       <div className="card card-body mb-3">
         <h4>
           {name}
-          <MaterialIcon
-            onClick={this.OnShowClick.bind(this, name)}
-            icon="arrow_drop_down"
-          />
+          <MaterialIcon onClick={this.OnShowClick} icon="arrow_drop_down" />
         </h4>
         <ul className="list-group">
           <li className="list-group-item">Email : {email}</li>
