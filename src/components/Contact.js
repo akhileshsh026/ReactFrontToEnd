@@ -3,8 +3,14 @@ import PropTypes from "prop-types";
 import MaterialIcon from "material-icons-react";
 
 class Contact extends Component {
+  state = {
+    showContactInfo: true
+  };
+
   OnShowClick = e => {
-    console.log(e.target);
+    this.setState({
+      showContactInfo: !this.state.showContactInfo
+    });
   };
 
   render() {
