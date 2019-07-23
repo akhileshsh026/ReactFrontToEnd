@@ -12,7 +12,7 @@ class Contact extends Component {
     const { showContactInfo } = this.state;
     return (
       <div className="card card-body mb-3">
-        <h4>
+        <h4 style={{ cursor: "pointer" }}>
           {name}
           <MaterialIcon
             onClick={() => {
